@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+div {
+  
+  padding: 50px;
+  margin: 20px;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+    </style>
+</head>
+<body style="background-color:#c0926d">
+    <div>
+    <nav style="font-size:large">
+        <a href="https://www.google.co.il/?hl=iw" >Search</a> |
+        <a href="file:///Users/ofri/Desktop/web/ofri-mor/templates/homepage.html" >Home Page</a> |
+        <a href="https://dogtime.com/dog-breeds/profiles">All Dog Breed Profiles</a>
+      </nav>
+
+    <h1  style="font-size:4vw; color:rgb(202, 135, 18);"> Meet with Alpha</h1>
+   
+    <h1>but first, we will need sum details </h1>
+    <h3>About your dog of course</h3>
+    <form action="/action_page.php">
+     <fieldset>
+      <legend><span style='font-size:30px;'>&#128054;</span></legend>
+
+<div>
+  <form action="/action_page.php">
+    <label for="DOGname">Name</label>
+    <input type="text" id="fname" name="name" placeholder="Write down your dog's name">
+
+
+    <label for="Is your dog">Is your dog</label>
+    <select id="Is your dog" name="Is your dog">
+        <option value="select">Choose from the options</option>
+        <option value="dont Love people">Love people</option>
+      <option value="dont Love dogs">Love dogs</option>
+      <option value="love everybody">love everybody</option>
+    </select>
+    
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+
+    <p>Choose your Dog breed:</p>
+    <form>
+    <input type="radio" id="Golden" name="fav_dog" value="Golden">
+    <label for="html">Golden</label><br>
+    <input type="radio" id="Shih Tzu" name="fav_dog" value="Shih Tzu">
+    <label for="css">Shih Tzu</label><br>
+    <input type="radio" id="husky" name="fav_dog" value="husky">
+    <label for="husky">Husky</label><br>
+    </form>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+    
+</form>
+</fieldset>
+</form>
+</div>
+
+
+</body>
+</html>
