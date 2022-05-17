@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<link rel="stylesheet" href="../static/Design.css">-->
+<link rel="stylesheet" href="/Users/ofri/Desktop/web/ofri-mor1/static/Design.css">
     <title>Document</title>
-    <style>
+  
 
-div {
+<!--    
+  <style>
+
+/* ממרכז את כל הדף */
+/* div {
   
   padding: 50px;
   margin: 20px;
-}
+} */
 
-
+/* מגדיל ומסדר את הלבן שכותבים בו בתשובות */
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -24,6 +30,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
+/* מעצב את הsubmit בירוק ובגדול */
 input[type=submit] {
   width: 100%;
   background-color: #4CAF50;
@@ -35,64 +42,90 @@ input[type=submit] {
   cursor: pointer;
 }
 
+/* לא עושה משהו לסבמית */
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
+/* נותן את הרקע הלבן שמפריד בין הרקע לכתוב */
 div {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
 
-    </style>
+  </style>  -->
 </head>
-<body style="background-color:#c0926d">
-    <div>
-    <nav style="font-size:large">
-        <a href="https://www.google.co.il/?hl=iw" >Search</a> |
-        <a href="file:///Users/ofri/Desktop/web/ofri-mor1/templates/homepage.html" >Home Page</a> |
-        <a href="https://dogtime.com/dog-breeds/profiles">All Dog Breed Profiles</a>
-      </nav>
 
-    <h1  style="font-size:4vw; color:rgb(202, 135, 18);"> Meet with Alpha</h1>
-   
+
+
+<body >
+    
+  <div>
+
+    <div id="container">
+
+  
+         <!-- כותרת העמוד-הפגשו עם אלפא -->
+      <div class="header">Meet with Alpha </div>
+    <!-- <h1  style="font-size:4vw; color:rgb(202, 135, 18);"> Meet with Alpha</h1>
+   -->
+  
+     <!-- שורת הבר -->
+     <div class="topnav">
+      <a href="https://www.google.co.il/?hl=iw" >Search</a> 
+      <a href="file:///Users/ofri/Desktop/web/ofri-mor1/templates/homepage.html" >Home Page</a> 
+      <a href="https://dogtime.com/dog-breeds/profiles">All Dog Breed Profiles</a>
+    </div>
+
+
+    <!-- כותרת העמוד השניה -->
     <h1>but first, we will need sum details </h1>
-    <h3>About your dog of course</h3>
+    <!-- כותרת העמוד השלישית -->
+    <div id="arrow"> <h3>About your dog of course</h3> </div>
+    
+    </div>
+
+    
+<!-- הסמיילי במסגרת השחורה -->
     <form action="/action_page.php">
      <fieldset>
-      <legend><span style='font-size:30px;'>&#128054;</span></legend>
+      <legend><span>&#128054;</span></legend>
 
-<div>
-  <form action="/action_page.php">
-    <label for="DOGname">Name</label>
-    <input type="text" id="fname" name="name" placeholder="Write down your dog's name">
+    <div> 
+      <!-- הכותרת כתיבת שם הכלב והתיבה הלבנה לכתיבה -->
+      <form action="/action_page.php">
+        <label for="DOGname">Name</label>
+        <input type="text" id="fname" name="name" placeholder="Write down your dog's name">
 
+    <!-- האופציות לבחור סוג כלב והשורת גלילה -->
+        <label for="Is your dog">Is your dog</label>
+        <select id="Is your dog" name="Is your dog">
+            <option value="select">Choose from the options</option>
+            <option value="dont Love people">Love people</option>
+          <option value="dont Love dogs">Love dogs</option>
+          <option value="love everybody">love everybody</option>
+        </select>
+        
+        <!-- לכתוב תאריך לידה -->
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
 
-    <label for="Is your dog">Is your dog</label>
-    <select id="Is your dog" name="Is your dog">
-        <option value="select">Choose from the options</option>
-        <option value="dont Love people">Love people</option>
-      <option value="dont Love dogs">Love dogs</option>
-      <option value="love everybody">love everybody</option>
-    </select>
-    
-    <label for="birthday">Birthday:</label>
-    <input type="date" id="birthday" name="birthday"><br><br>
+        <!-- לבחור סוג כלב -->
+        <p>Choose your Dog breed:</p>
+        <form>
+        <input type="radio" id="Golden" name="fav_dog" value="Golden">
+        <label for="html">Golden</label><br>
+        <input type="radio" id="Shih Tzu" name="fav_dog" value="Shih Tzu">
+        <label for="css">Shih Tzu</label><br>
+        <input type="radio" id="husky" name="fav_dog" value="husky">
+        <label for="husky">Husky</label><br>
+        </form>
 
-    <p>Choose your Dog breed:</p>
-    <form>
-    <input type="radio" id="Golden" name="fav_dog" value="Golden">
-    <label for="html">Golden</label><br>
-    <input type="radio" id="Shih Tzu" name="fav_dog" value="Shih Tzu">
-    <label for="css">Shih Tzu</label><br>
-    <input type="radio" id="husky" name="fav_dog" value="husky">
-    <label for="husky">Husky</label><br>
-    </form>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
+        <!-- הסבמית -->
+        <div id="submit1"> <input type="submit" value="Submit"> </div>
+      </form>
+  </div>
     
 </form>
 </fieldset>
